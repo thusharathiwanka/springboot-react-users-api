@@ -15,12 +15,12 @@ public class SpringbootBackendApplication implements CommandLineRunner {
     }
 
     @Autowired
-    private UserRepository userReposotory;
+    private UserRepository userRepository;
 
     @Override
     public void run(String... args) throws Exception {
-        this.userReposotory.save(new User("Thushara", "Thiwanka", "thushara@gmail.com"));
-        this.userReposotory.save(new User("Chamath", "Heshan", "chamath@gmail.com"));
-        this.userReposotory.save(new User("Hiruni", "Hansima", "hiruni@gmail.com"));
+        this.userRepository.save(new User("Thushara", "Thiwanka", "thushara@gmail.com"));
+        this.userRepository.save(new User("Chamath", "Heshan", "chamath@gmail.com"));
+        this.userRepository.save(new User("Hiruni", "Hansima", "hiruni@gmail.com"));
     }
 }
